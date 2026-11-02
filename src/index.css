@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html { -webkit-text-size-adjust: 100%; background: #F7F5EF; }
+    html.lenis, html.lenis body { height: auto; }
+    .lenis.lenis-smooth { scroll-behavior: auto !important; }
+    body {
+        margin: 0;
+        background: #F7F5EF;
+        color: #25251F;
+        font-family: 'Proxima Nova', system-ui, -apple-system, 'Segoe UI', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+    }
+    ::selection { background: #C2A06A; color: #25251F; }
+    :focus-visible { outline: 2px solid #C2A06A; outline-offset: 3px; }
+}
